@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock 25 + 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="timer">
+        <p id="timer-label">Session</p>
+        <h1 id="time-left">25:00</h1>
+        <div class="btns">
+          <button id="start_stop">Play</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="break-box">
+          <p id="break-label">Break Length</p>
+          <div class="btns">
+            <button id="break-decrement">-</button>
+            <p id="break-length">5</p>
+            <button id="break-increment">+</button>
+          </div>
+        </div>
+        <div class="session-box">
+          <p id="session-label">Session Length</p>
+          <div class="btns">
+            <button id="session-decrement">-</button>
+            <p id="session-length">25</p>
+            <button id="session-increment">+</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <audio src="/alarm-clock-short-6402.mp3" id="beep"></audio>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
